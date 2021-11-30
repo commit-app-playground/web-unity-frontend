@@ -23,5 +23,5 @@ modules:
     parameters:
       ## depending on framework and build pipeline your project may have different
       ## ways of building a static site
-      build_command: npm run export
+      build_command: npm run build
       build_output_folder: out/
