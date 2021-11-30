@@ -4,7 +4,8 @@ function useMute() {
   const [mute, setMute] = useState(false);
 
   useEffect(function () {
-    const savedMute = localStorage.getItem("mute").toLowerCase() === "true";
+    const savedMuteString = localStorage.getItem("mute") || "false";
+    const savedMute = savedMuteString.toLowerCase() === "true";
     setMute(savedMute);
   }, []);
 
