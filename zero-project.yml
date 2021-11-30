@@ -11,7 +11,7 @@
 #  <name>.spa.onboarding.dev
 # If it is a traditional static site (served via individual html files instead of purely a single index.html) it will be:
 #  <name>.static.onboarding.dev
-name:
+name: web-unity
 
 shouldPushRepositories: false
 
