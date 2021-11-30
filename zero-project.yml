@@ -1,0 +1,27 @@
+# ------------------------
+# IMPORTANT:
+# Committing a change with this file will trigger Github actions
+# to template and rewrite the repository, once doing so you will no longer see this file
+# Instead your repository will be your own example project!
+# ------------------------
+#
+# Fill in name of your static site - must be lowercase alphanumeric with dashes only
+# NOTE:
+# If you are making a single page app, it will be served and accessible via
+#  <name>.spa.onboarding.dev
+# If it is a traditional static site (served via individual html files instead of purely a single index.html) it will be:
+#  <name>.static.onboarding.dev
+name:
+
+shouldPushRepositories: false
+
+modules:
+  templates:
+    files:
+      dir: output
+      source: .
+    parameters:
+      ## depending on framework and build pipeline your project may have different
+      ## ways of building a static site
+      build_command: npm run export
+      build_output_folder: out/
